@@ -23,3 +23,6 @@
 - PDF地址：<a href = "https://github.com/wenbochang888/house/blob/master/house.pdf">房价PDF版本</a>
 
 
+![https://github.com/wenbochang888/house/blob/master/src/img/1.png]()
+
+![https://github.com/wenbochang888/house/blob/master/src/img/2.png]()
