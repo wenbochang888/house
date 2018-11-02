@@ -24,4 +24,4 @@
 
 ![1](https://github.com/wenbochang888/house/blob/master/src/img/1.png)
 
-![2](https://github.com/wenbochang888/house/blob/master/src/img/2.png)
+![2](https://github.com/wenbochang888/house/blob/master/src/img/2.jpg)
