@@ -1,4 +1,4 @@
-<center><a href = "https://github.com/wenbochang888/house/raw/master/house.pdf"><font color=#B22222 size=72>点我下载</font></a></center>
+# **<a href = "https://github.com/wenbochang888/house/raw/master/house.pdf">点我下载PDF文档</a>**
 
 ### **前言：**
 
