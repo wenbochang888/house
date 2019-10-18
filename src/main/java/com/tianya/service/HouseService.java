@@ -1,9 +1,11 @@
 package com.tianya.service;
 
 import com.tianya.controller.HouseController;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -14,34 +16,29 @@ import java.util.List;
  * @Date: 2018/11/2
  */
 @Service
+@Slf4j
 public class HouseService {
 
 	@Autowired
-	HouseController houseController;
+	private HouseController houseController;
 
-	/**
-	 * 写入文件中，转化为PDF文档
-	 */
+	/** 写入文件中，转化为PDF文档 */
 	public void writeFile() {
 		String PREFIX = "### ==**";
 		String SUFFIX = "楼: **==" + "\n";
 		List<String> res = getMarkDown();
-		FileOutputStream fos = null;
-		int cnt = 1;
-		try {
-			File f1 = new File("E:/house2.txt");
-			fos = new FileOutputStream(f1, true);
+		try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(new File("f:\\house.txt")))) {
+			int cnt = 1;
 			for (String s : res) {
 				// markdown格式
 				String ss = PREFIX + cnt + SUFFIX + "\n";
-				fos.write(ss.getBytes());
+				bos.write(ss.getBytes());
 				// 真正数据
-				fos.write(s.getBytes());
+				bos.write(s.getBytes());
 				cnt++;
 			}
-			fos.close();
-			System.out.println("输入完成");
-		} catch (IOException e) {
+			System.out.println("success");
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

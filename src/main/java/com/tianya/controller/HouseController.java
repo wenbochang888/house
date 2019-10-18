@@ -1,6 +1,7 @@
 package com.tianya.controller;
 
 import com.tianya.util.HttpMethod;
+import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -18,13 +19,14 @@ import java.util.regex.Pattern;
  * @Date: 2018/11/12
  */
 @Controller
+@Slf4j
 public class HouseController {
 
 	public static final String PREFIX = "https://bbs.tianya.cn/m/post_author-house-252774-";
 	public static final String SUFFIX = ".shtml";
 
 	@Autowired
-	HttpMethod httpMethod;
+	private HttpMethod httpMethod;
 
 	/**
 	 * 获取评论
@@ -33,11 +35,14 @@ public class HouseController {
 	public List<String> getComment() {
 		List<String> res = new ArrayList<>();
 		// 92是固定的，帖子的总数
+		log.info("开始请求天涯帖子.....");
 		for (int i = 1; i <= 92; i++) {
 			String url = getUrl(i);
 			String content = httpMethod.get(url);
 			getParse(content, res);
+			log.info("请求帖子第 " + i + "  行");
 		}
+		log.info("结束请求天涯帖子.....");
 		return res;
 	}
 

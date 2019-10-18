@@ -13,22 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class HouseWeb {
 
 	@Autowired
-	HouseService test;
+	private HouseService houseService;
 
 	@GetMapping("/")
 	public String index() {
 		return "Hello World";
 	}
 
-	@GetMapping("/test")
-	public String test() {
-		String res = test.test();
-		return res;
-	}
-
 	@GetMapping("/comment")
 	public String comment() {
-		test.writeFile();
+		houseService.writeFile();
 		return "ok";
 	}
 }
