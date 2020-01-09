@@ -1,5 +1,6 @@
 # **<a href = "#">点点右上角Star，感谢支持，谢谢</a>**
 # **<a href = "https://github.com/wenbochang888/house/raw/master/house.pdf">点我下载PDF文档</a>**
+# **<a href = "https://github.com/wenbochang888/house/raw/master/house2.pdf">点我下载另外一个大神的PDF文档</a>**
 
 ### **前言：**
 
@@ -11,6 +12,12 @@
 - **并且当时楼主买了三套房，现在估计已经赚翻了**
 - 秉着对大神的憧憬，本人又是学计算机的，既然帖子内容这么好
 - 那爬下来了，说动手就动手
+
+### **前言2：**
+
+- 在逛天涯的时候，又看见了一篇大神的文章
+- 在13年买了8套房。tql。写的也特别的好，推荐。
+- 天涯地址 ： <a href = "http://bbs.tianya.cn/post-house-447880-1.shtml">北京十年房子故事</a>
 
 ### 运用技术
 
