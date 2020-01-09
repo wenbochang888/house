@@ -25,11 +25,8 @@ import java.util.regex.Pattern;
 @Slf4j
 public class HouseService {
 
-	public static final String PREFIX = "https://bbs.tianya.cn/m/post_author-house-252774-";
+	public static final String PREFIX = "https://bbs.tianya.cn/m/post_author-house-447880-";
 	public static final String SUFFIX = ".shtml";
-
-	@Autowired
-	private HouseController houseController;
 
 	/**
 	 * 转化为markdown格式
@@ -54,7 +51,7 @@ public class HouseService {
 		List<String> res = new ArrayList<>();
 		// 92是固定的，帖子的总数
 		log.info("开始请求天涯帖子.....");
-		for (int i = 1; i <= 92; i++) {
+		for (int i = 1; i <= 167; i++) {
 			String url = getUrl(i);
 			String content = HttpMethod.get(url);
 			getParse(content, res);

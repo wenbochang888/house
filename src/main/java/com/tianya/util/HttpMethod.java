@@ -24,7 +24,7 @@ public class HttpMethod {
 	}
 
 	private static HttpConfig getConfig() {
-		String cookies = "__guid=414814951; __guid2=414814951; user=w=wenber888&id=137776589&f=1; right=web4=n&portal=n; __u_a=v2.2.6; sso=r=1648448059&sid=&wsid=B45353929B80073F357A507D1C991623; temp=k=447189638&s=&t=1541148185&b=4192447767437b928489e63e3913ef52&ct=1541148185&et=1543740185; temp4=rm=16a6cb6e3414a9655ac76f341c44e1e4; u_tip=137776589=0; vip=447189638%3D0; JSESSIONID=abc_q2y-0bQSr8Zw1LtBw; time=ct=1541148308.213; __ptime=1541148308504; ty_msg=1541148523985_137776589_2_0_0_0_0_0_2_0_0_0_0";
+		String cookies = "JSESSIONID=abcUIPubjzh36dpJGfk_w; __guid=1200512923; __guid2=1200512923; deid=a4f1521763def5a36abdc1b524a1be7e; sso=r=696161994&sid=&wsid=2C275020FCBB2CF94EA1AAF8D1CA21D9; user=w=wenber888&id=137776589&f=1; temp=k=282632486&s=&t=1578569735&b=e18fe0b747008162dfc019ab54d61254&ct=1578569735&et=1581161735; right=web4=n&portal=n; temp4=rm=8346ced28c886d2dc2be32e645d2afab; u_tip=; vip=282632486%3D0; __u_a=v2.3.0; time=ct=1578569874.206; __ptime=1578569874256; ty_msg=1578570149252_137776589_0_0_0_0_0_2_0_0_0_0_0; bbs_msg=1578570149481_137776589_0_0_0_0";
 		String referer = "https://www.baidu.com";
 		Header[] headers= HttpHeader.custom().cookie(cookies).referer(referer).build();
 		HttpConfig config = HttpConfig.custom().headers(headers);
