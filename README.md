@@ -1,6 +1,7 @@
-# **<a href = "#">点点右上角Star，感谢支持，谢谢</a>**
-## **<a href = "https://github.com/wenbochang888/house/raw/master/house.pdf">点我下载PDF文档(KK大神)</a>**
-## **<a href = "https://github.com/wenbochang888/house/raw/master/house2.pdf">点我下载PDF文档(子房大神)</a>**
+# **<a href = "#">点点右上角Star，感谢支持，谢谢.</a>**
+- ### **微信公众号：“程序员博博” 更多PDF下载**
+- ### **<a href = "https://github.com/wenbochang888/house/raw/master/house.pdf">点我下载PDF文档(KK大神)</a>**
+- ### **<a href = "https://github.com/wenbochang888/house/raw/master/house2.pdf">点我下载PDF文档(子房大神)</a>**
 
 ### **前言：**
 
@@ -13,10 +14,7 @@
 - 秉着对大神的憧憬，本人又是学计算机的，既然帖子内容这么好
 - 那爬下来了，说动手就动手
 
-### **前言2：**
-
-- 在逛天涯的时候，又看见了一篇大神的文章
-- 在13年买了8套房。tql。写的也特别的好，推荐。
+- 看西山子房
 - 天涯地址 ： <a href = "http://bbs.tianya.cn/post-house-447880-1.shtml">北京十年房子故事</a>
 
 ### 运用技术
@@ -32,6 +30,9 @@
 - Github地址：<a href = "https://github.com/wenbochang888/house">wenbochang888-house</a>，欢迎给我一个小小的star
 - PDF在线浏览地址(可能加载缓慢)：<a href = "https://github.com/wenbochang888/house/blob/master/house.pdf">房价PDF版本</a>
 - PDF下载地址：<a href = "https://github.com/wenbochang888/house/raw/master/house.pdf">点我下载</a>
+
+
+![1](https://github.com/wenbochang888/house/blob/master/src/img/qrcode.jpg)
 
 ![1](https://github.com/wenbochang888/house/blob/master/src/img/1.png)
 
