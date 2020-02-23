@@ -13,9 +13,8 @@
 - **并且当时楼主买了三套房，现在估计已经赚翻了**
 - 秉着对大神的憧憬，本人又是学计算机的，既然帖子内容这么好
 - 那爬下来了，说动手就动手
-
-- 看西山子房
-- 天涯地址 ： <a href = "http://bbs.tianya.cn/post-house-447880-1.shtml">北京十年房子故事</a>
+- <a href = "http://bbs.tianya.cn/post-house-252774-1.shtml">2010年的房地产调控，我们收获了什么？写在房价暴涨前</a>
+- <a href = "http://bbs.tianya.cn/post-house-447880-1.shtml">北京十年房子故事</a>
 
 ### 运用技术
 
@@ -32,7 +31,7 @@
 - PDF下载地址：<a href = "https://github.com/wenbochang888/house/raw/master/house.pdf">点我下载</a>
 
 
-![1](https://github.com/wenbochang888/house/blob/master/src/img/qrcode.jpg)
+![1](https://github.com/wenbochang888/house/blob/final/src/img/qrcode.jpg)
 
 ![1](https://github.com/wenbochang888/house/blob/master/src/img/1.png)
 
