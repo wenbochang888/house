@@ -16,11 +16,11 @@ import java.util.concurrent.ThreadLocalRandom;
 @Slf4j
 public class FileUtils {
 
-	private static final String PREFIX = "### ==**";
-	private static final String SUFFIX = "楼: **==" + "\n";
+	private static final String PREFIX = "### **";
+	private static final String SUFFIX = "楼: **" + "\n";
 
 	/** 写入文件中，转化为PDF文档 */
-	public static void writeFile(List<String> res, String url) {
+	public static String writeFile(List<String> res, String url) {
 		String uuid = url + "-" + ThreadLocalRandom.current().nextInt(100, 999);
 		String path = "/home/tomcat/apache-tomcat-8.5.23/workspace/download/" + uuid + ".md";
 		try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(new File(path)))) {
@@ -37,7 +37,7 @@ public class FileUtils {
 			log.info("写入磁盘成功...uuid = {}", uuid);
 		} catch (Exception e) {
 			log.error("写入文件出错：" + e.getMessage());
-			e.printStackTrace();
 		}
+		return path;
 	}
 }

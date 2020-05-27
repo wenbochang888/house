@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+    <!--定义变量-->
+    <property name="APP_NAME" value="house"/>
+    <timestamp key="TIMESTAMP" datePattern="yyyy-MM-dd"/>
+
+    <!-- 输出到控制台 -->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>
+                 %date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%X{sessionId}] %-5level - [%c java:%L] [%m]%n
+            </pattern>
+        </layout>
+    </appender>
+
+    <appender name="fileLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${APP_NAME}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>log/house.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <maxFileSize>10MB</maxFileSize>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>
+                %date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%X{sessionId}] %-5level - [%c java:%L] [%m]%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- 这里一定要指向name -->
+    <root level="INFO">
+        <appender-ref ref="fileLog"/>
+        <appender-ref ref="stdout"/>
+    </root>
+
+</configuration>
