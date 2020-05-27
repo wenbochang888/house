@@ -45,7 +45,7 @@ public class HouseController {
 		log.info("url = {}, page = {}, uuid = {}", url, page, uuid);
 		syncUtils.submit(() -> getComments(url, page, uuid));
 		log.info("已经提交申请，请求后续去查看");
-		return "已经提交申请，请求后续去查看 请您在十分钟后访问 120.78.159.149:8089/download/" + uuid;
+		return "已经提交申请，请求后续去查看 请您在十分钟后访问 120.78.159.149:8089/download?name=" + uuid;
 	}
 
 	@RequestMapping(value = "/get/comment")
@@ -76,6 +76,7 @@ public class HouseController {
 			if (bytes == null) {
 				log.error("读取文件出错,该文件可能不存在");
 			}
+			response.setContentType("application/octet-stream");
 			response.getOutputStream().write(bytes);
 			response.flushBuffer();
 			log.info("成功读取到了文件，位置为：{}", name);
