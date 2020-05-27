@@ -1,13 +1,11 @@
 package com.tianya.service;
 
-import com.tianya.controller.HouseController;
 import com.tianya.util.HttpMethod;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -25,7 +23,7 @@ import java.util.regex.Pattern;
 @Slf4j
 public class HouseService {
 
-	public static final String PREFIX = "https://bbs.tianya.cn/m/post_author-house-447880-";
+	public static final String PREFIX = "https://bbs.tianya.cn/m/";
 	public static final String SUFFIX = ".shtml";
 
 	/**
@@ -47,12 +45,14 @@ public class HouseService {
 	 * 获取评论
 	 * @return
 	 */
-	public List<String> getComment() {
+	public List<String> getComment(String innerUrl, int wholePage) {
 		List<String> res = new ArrayList<>();
 		// 92是固定的，帖子的总数
 		log.info("开始请求天涯帖子.....");
-		for (int i = 1; i <= 167; i++) {
-			String url = getUrl(i);
+		// 修改2731即可
+		int page = (wholePage + 4) / 5;
+		for (int i = 1; i <= page; i++) {
+			String url = getUrl(i, innerUrl);
 			String content = HttpMethod.get(url);
 			getParse(content, res);
 			log.info("请求帖子第 " + i + "  行");
@@ -66,9 +66,9 @@ public class HouseService {
 	 * @param i
 	 * @return
 	 */
-	private String getUrl(int i) {
+	private String getUrl(int i, String url) {
 		int pos = 5 * i - 4;
-		String res = PREFIX + pos + SUFFIX;
+		String res = PREFIX + url + "-" + pos + SUFFIX;
 		return res;
 	}
 

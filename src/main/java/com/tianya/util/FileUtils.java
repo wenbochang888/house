@@ -6,6 +6,8 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.List;
+import java.util.UUID;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * @author changwenbo
@@ -18,9 +20,12 @@ public class FileUtils {
 	private static final String SUFFIX = "楼: **==" + "\n";
 
 	/** 写入文件中，转化为PDF文档 */
-	public static void writeFile(List<String> res) {
-		try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(new File("f:\\house.md")))) {
+	public static void writeFile(List<String> res, String url) {
+		String uuid = url + "-" + ThreadLocalRandom.current().nextInt(100, 999);
+		String path = "/home/tomcat/apache-tomcat-8.5.23/workspace/download/" + uuid + ".md";
+		try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(new File(path)))) {
 			int cnt = 1;
+			log.info("开始写入磁盘....uuid = {}", uuid);
 			for (String s : res) {
 				// markdown格式
 				String ss = PREFIX + cnt + SUFFIX + "\n";
@@ -29,7 +34,7 @@ public class FileUtils {
 				bos.write(s.getBytes());
 				cnt++;
 			}
-			System.out.println("success");
+			log.info("写入磁盘成功...uuid = {}", uuid);
 		} catch (Exception e) {
 			log.error("写入文件出错：" + e.getMessage());
 			e.printStackTrace();
