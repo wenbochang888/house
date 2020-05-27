@@ -2,6 +2,7 @@ package com.tianya.service;
 
 import com.tianya.util.HttpMethod;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -54,6 +55,9 @@ public class HouseService {
 		for (int i = 1; i <= page; i++) {
 			String url = getUrl(i, innerUrl);
 			String content = HttpMethod.get(url);
+			if (StringUtils.isEmpty(content)) {
+				continue;
+			}
 			getParse(content, res);
 			log.info("请求帖子第 " + i + "  行");
 		}

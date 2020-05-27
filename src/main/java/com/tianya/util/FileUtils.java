@@ -20,8 +20,7 @@ public class FileUtils {
 	private static final String SUFFIX = "楼: **" + "\n";
 
 	/** 写入文件中，转化为PDF文档 */
-	public static String writeFile(List<String> res, String url) {
-		String uuid = url + "-" + ThreadLocalRandom.current().nextInt(100, 999);
+	public static String writeFile(List<String> res, String uuid) {
 		String path = "/home/tomcat/apache-tomcat-8.5.23/workspace/download/" + uuid + ".md";
 		try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(new File(path)))) {
 			int cnt = 1;

@@ -3,13 +3,14 @@ package com.tianya.util;
 import com.arronlong.httpclientutil.HttpClientUtil;
 import com.arronlong.httpclientutil.common.HttpConfig;
 import com.arronlong.httpclientutil.common.HttpHeader;
-import com.arronlong.httpclientutil.exception.HttpProcessException;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.http.Header;
 
 /**
  * @Auther: Chang
  * @Date: 2018/10/3
  */
+@Slf4j
 public class HttpMethod {
 
 	public static String get(String url) {
@@ -17,8 +18,8 @@ public class HttpMethod {
 		String content = null;
 		try {
 			content = HttpClientUtil.get(config.url(url));
-		} catch (HttpProcessException e) {
-			e.printStackTrace();
+		} catch (Exception e) {
+			log.error("http get失败 e = {}", e);
 		}
 		return content;
 	}
