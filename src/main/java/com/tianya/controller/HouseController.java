@@ -72,12 +72,20 @@ public class HouseController {
 	@RequestMapping("/download")
 	public void readImgUrl(HttpServletResponse response, String name) {
 		try {
-			byte[] bytes = org.apache.commons.io.FileUtils.readFileToByteArray(new File("/home/tomcat/apache-tomcat-8.5.23/workspace/download/" + name + ".pdf"));
+			File file = new File("/home/tomcat/apache-tomcat-8.5.23/workspace/download/" + name + ".pdf");
+			byte[] bytes = org.apache.commons.io.FileUtils.readFileToByteArray(file);
 			if (bytes == null) {
 				log.error("读取文件出错,该文件可能不存在");
 			}
+			// 文件进度条
+			response.setHeader("Content-Length", file.length() + "");
+			// 文件名字
+			response.setHeader("Content-Disposition", "attachment;fileName=" + name + ".pdf");
+			// 弹出下载框
 			response.setContentType("application/octet-stream");
+			// 写入流
 			response.getOutputStream().write(bytes);
+			// 刷新
 			response.flushBuffer();
 			log.info("成功读取到了文件，位置为：{}", name);
 		} catch (IOException e) {

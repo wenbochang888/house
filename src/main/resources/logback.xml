@@ -15,11 +15,11 @@
 
     <appender name="fileLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${APP_NAME}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>log/house.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <maxHistory>30</maxHistory>
-            <maxFileSize>10MB</maxFileSize>
-        </rollingPolicy>
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">-->
+<!--            <fileNamePattern>log/house.%d{yyyy-MM-dd}.%i.log</fileNamePattern>-->
+<!--            <maxHistory>30</maxHistory>-->
+<!--            <maxFileSize>10MB</maxFileSize>-->
+<!--        </rollingPolicy>-->
         <encoder>
             <charset>UTF-8</charset>
             <pattern>
