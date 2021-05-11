@@ -1,7 +1,7 @@
 # **<a href = "#">点点右上角Star，感谢支持，谢谢.</a>**
-- ### **微信公众号：“程序员博博” 更多PDF下载**
 - ### **<a href = "https://github.com/wenbochang888/house/raw/master/house.pdf">点我下载PDF文档(KK大神)</a>**
 - ### **<a href = "https://github.com/wenbochang888/house/raw/master/house2.pdf">点我下载PDF文档(子房大神)</a>**
+- #### **<a href = "https://www.zhihu.com/people/zhang-chou-zhu">知乎回答被删了, 谁提供下快照，可以issue里面提供下，谢谢</a>**
 
 ### **前言：**
 
@@ -15,6 +15,9 @@
 - 那爬下来了，说动手就动手
 - <a href = "http://bbs.tianya.cn/post-house-252774-1.shtml">2010年的房地产调控，我们收获了什么？写在房价暴涨前</a>
 - <a href = "http://bbs.tianya.cn/post-house-447880-1.shtml">北京十年房子故事</a>
+- <a href = "http://bbs.tianya.cn/post-house-782707-1.shtml">读KK大神《2010年的房地产调控，我们收获了什么？》笔记分享贴
+  </a>
+
 
 ### 运用技术
 
@@ -29,9 +32,6 @@
 - Github地址：<a href = "https://github.com/wenbochang888/house">wenbochang888-house</a>，欢迎给我一个小小的star
 - PDF在线浏览地址(可能加载缓慢)：<a href = "https://github.com/wenbochang888/house/blob/master/house.pdf">房价PDF版本</a>
 - PDF下载地址：<a href = "https://github.com/wenbochang888/house/raw/master/house.pdf">点我下载</a>
-
-
-![1](https://github.com/wenbochang888/house/blob/final/src/img/qrcode.jpg)
 
 ![1](https://github.com/wenbochang888/house/blob/master/src/img/1.png)
 
