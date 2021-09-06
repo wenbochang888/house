@@ -1,6 +1,6 @@
 # **<a href = "#">点点右上角Star，感谢支持，谢谢.</a>**
 - ### **<a href = "https://github.com/wenbochang888/house/raw/master/house.pdf">点我下载PDF文档(KK大神)</a>**
-- ### **<a href = "https://github.com/wenbochang888/house/raw/master/house2.pdf">点我下载PDF文档(子房大神)</a>**
+- ### **<a href = "https://github.com/wenbochang888/house/raw/final/house2.pdf">点我下载PDF文档(子房大神)</a>**
 - #### **<a href = "https://www.zhihu.com/question/284939230/answer/483437087">知乎回答被删了, 谁提供下快照，可以issue里面提供下，谢谢</a>**
 
 ### **前言：**
@@ -25,6 +25,16 @@
 - HttpClient
 - JSoup
 - 正则
+
+> 突然不知道为什么火了，仅仅相比于仓库其他个位数的项目
+> 
+> 这个项目于2018年创立，当时仅仅想把帖子爬下来。**并没有注意一些代码的格式、风格、可用性等等**
+> 
+> 因此本项目并不适合学习，仅仅是一个爬取天涯帖子的工具而已。其技术十分的简单，对于已经工作的，没有任何参考意义
+> 
+> 如楼主最近有时间，会选择将其重构，不过暂时无重构打算。
+> 
+> 于 2021/09/06 晚9点 
 
 ### 成果
 
