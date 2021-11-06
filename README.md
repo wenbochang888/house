@@ -1,8 +1,11 @@
 # **<a href = "#">点点右上角Star，感谢支持，谢谢.</a>**
 - ### **<a href = "https://github.com/wenbochang888/house/raw/master/house.pdf">点我下载PDF文档(KK大神)</a>**
 - ### **<a href = "https://github.com/wenbochang888/house/raw/final/house2.pdf">点我下载PDF文档(子房大神)</a>**
+- ### **<a href = "https://github.com/wenbochang888/house/raw/final/house3.pdf">点我下载PDF文档(大鹏金翅明王)</a> 2021.11.6更新**
 - #### **<a href = "https://www.zhihu.com/question/284939230/answer/483437087">知乎回答被删了, 谁提供下快照，可以issue里面提供下，谢谢</a>**
+- #### **<a href = "https://github.com/wenbochang888/house/issues">下载失败，其他问题，欢迎你issues留言</a>**
 
+ 
 ### **前言：**
 
 - 本人对经济一些比较感兴趣，也比较经常关注新闻，逛逛论坛什么的。
@@ -15,8 +18,11 @@
 - 那爬下来了，说动手就动手
 - <a href = "http://bbs.tianya.cn/post-house-252774-1.shtml">2010年的房地产调控，我们收获了什么？写在房价暴涨前</a>
 - <a href = "http://bbs.tianya.cn/post-house-447880-1.shtml">北京十年房子故事</a>
+- <a href = "https://yidukf.com/read_130150_8069.html">因为贱，所以生活艰辛！告诉你们真相，你们会更绝望
+  </a>
 - <a href = "http://bbs.tianya.cn/post-house-782707-1.shtml">读KK大神《2010年的房地产调控，我们收获了什么？》笔记分享贴
   </a>
+
 
 
 ### 运用技术
@@ -46,3 +52,7 @@
 ![1](https://github.com/wenbochang888/house/blob/master/src/img/1.png)
 
 ![2](https://github.com/wenbochang888/house/blob/master/src/img/2.jpg)
+
+
+### start数量
+![start](https://star-history.t9t.io/#wenbochang888/house)
