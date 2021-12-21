@@ -54,11 +54,7 @@
 ![2](https://github.com/wenbochang888/house/blob/master/src/img/2.jpg)
 
 
-### start数量
-![start](
-## Stargazers over time
-
-[![Stargazers over time]
-## Stargazers over time
+### Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/wenbochang888/house.svg)](https://starchart.cc/wenbochang888/house)
+
