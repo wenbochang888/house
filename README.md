@@ -1,7 +1,7 @@
 # **<a href = "#">点点右上角Star，感谢支持，谢谢.</a>**
-- ### **<a href = "https://gitee.com/wenber/house/raw/final/house.pdf">点我下载PDF文档(KK大神)</a>**
-- ### **<a href = "https://gitee.com/wenber/house/raw/final/house2.pdf">点我下载PDF文档(子房大神)</a>**
-- ### **<a href = "https://gitee.com/wenber/house/raw/final/house3.pdf">点我下载PDF文档(大鹏金翅明王)</a> 2021.11.6更新**
+- ### **<a href = "https://github.com/wenbochang888/house/raw/final/house.pdf">点我下载PDF文档(KK大神)</a>**
+- ### **<a href = "https://github.com/wenbochang888/house/raw/final/house2.pdf">点我下载PDF文档(子房大神)</a>**
+- ### **<a href = "https://github.com/wenbochang888/house/raw/final/house3.pdf">点我下载PDF文档(大鹏金翅明王)</a> 2021.11.6更新**
 - #### **<a href = "https://www.zhihu.com/question/284939230/answer/483437087">知乎回答被删了, 谁提供下快照，可以issue里面提供下，谢谢</a>**
 - #### **<a href = "https://github.com/wenbochang888/house/issues">下载失败，其他问题，欢迎你issues留言</a>**
 
