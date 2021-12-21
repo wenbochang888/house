@@ -55,4 +55,10 @@
 
 
 ### start数量
-![start](https://star-history.t9t.io/#wenbochang888/house)
+![start](
+## Stargazers over time
+
+[![Stargazers over time]
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/wenbochang888/house.svg)](https://starchart.cc/wenbochang888/house)
