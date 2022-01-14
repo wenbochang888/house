@@ -2,7 +2,7 @@
 - ### **<a href = "https://github.com/wenbochang888/house/raw/final/house.pdf">点我下载PDF文档(KK大神)</a>**
 - ### **<a href = "https://github.com/wenbochang888/house/raw/final/house2.pdf">点我下载PDF文档(子房大神)</a>**
 - ### **<a href = "https://github.com/wenbochang888/house/raw/final/house3.pdf">点我下载PDF文档(大鹏金翅明王)</a> 2021.11.6更新**
-- #### **<a href = "https://github.com/wenbochang888/house/issues/5#issuecomment-1012857336">下载失败、网络出错，请点击这里。备用下载地址</a>**
+- #### **<a href = "https://share.weiyun.com/Ua7hjTXu">下载失败、网络出错，请点击这里。备用下载地址</a>**
 - #### **<a href = "https://github.com/wenbochang888/house/issues">其他问题，欢迎issues留言</a>**
 - #### **<a href = "https://www.zhihu.com/question/284939230/answer/483437087">知乎回答被删了, 谁提供下快照，可以issue里面提供下，谢谢</a>**
  
