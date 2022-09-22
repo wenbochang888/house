@@ -8,59 +8,39 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Service;
-import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @Auther: Chang
- * @Date: 2018/11/2
- */
 @Service
 @Slf4j
 public class HouseService {
 
-	public static final String PREFIX = "https://bbs.tianya.cn/m/";
+	public static final String PREFIX = "https://bbs.tianya.cn/m/post_author-house-";
 	public static final String SUFFIX = ".shtml";
 
-	/**
-	 * 转化为markdown格式
-	 * @return
-	 */
-	public List<String> transferStrToMD(List<String> comment) {
-		if (CollectionUtils.isEmpty(comment)) {
-			return Collections.EMPTY_LIST;
-		}
-		List<String> res = comment;
-		for (int i = 0; i < res.size(); i++) {
-			res.set(i, "    " + "    " + res.get(i) + "\n");
-		}
-		return res;
-	}
 
 	/**
 	 * 获取评论
 	 * @return
 	 */
-	public List<String> getComment(String innerUrl, int wholePage) {
+	public List<String> getComment(String id, int wholePage) {
 		List<String> res = new ArrayList<>();
-		// 92是固定的，帖子的总数
 		log.info("开始请求天涯帖子.....");
-		// 修改2731即可
 		int page = (wholePage + 4) / 5;
+
 		for (int i = 1; i <= page; i++) {
-			String url = getUrl(i, innerUrl);
+			String url = getUrl(i, id);
 			String content = HttpMethod.get(url);
 			if (StringUtils.isEmpty(content)) {
 				continue;
 			}
-			getParse(content, res);
+			parse(content, res);
 			log.info("请求帖子第 " + i + "  行");
 		}
+
 		log.info("结束请求天涯帖子.....");
 		return res;
 	}
@@ -70,9 +50,9 @@ public class HouseService {
 	 * @param i
 	 * @return
 	 */
-	private String getUrl(int i, String url) {
+	private String getUrl(int i, String id) {
 		int pos = 5 * i - 4;
-		String res = PREFIX + url + "-" + pos + SUFFIX;
+		String res = PREFIX + id + "-" + pos + SUFFIX;
 		return res;
 	}
 
@@ -81,7 +61,7 @@ public class HouseService {
 	 * @param content
 	 * @param res
 	 */
-	private void getParse(String content, List<String> res) {
+	private void parse(String content, List<String> res) {
 		Document doc = Jsoup.parse(content);
 		Elements links = doc.getElementsByClass("bd");
 		for (Element link : links) {

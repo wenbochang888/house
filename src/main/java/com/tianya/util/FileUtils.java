@@ -3,26 +3,19 @@ package com.tianya.util;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.BufferedOutputStream;
-import java.io.File;
 import java.io.FileOutputStream;
 import java.util.List;
-import java.util.UUID;
-import java.util.concurrent.ThreadLocalRandom;
 
-/**
- * @author changwenbo
- * @date 2019/10/18 16:58
- */
 @Slf4j
 public class FileUtils {
 
-	private static final String PREFIX = "### **";
-	private static final String SUFFIX = "楼: **" + "\n";
+	private static final String PREFIX = "### ==**";
+	private static final String SUFFIX = "楼: **==" + "\n";
 
 	/** 写入文件中，转化为PDF文档 */
 	public static String writeFile(List<String> res, String uuid) {
-		String path = "/home/tomcat/apache-tomcat-8.5.23/workspace/download/" + uuid + ".md";
-		try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(new File(path)))) {
+		String path = "/Users/apple/" + uuid + ".md";
+		try (BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(path))) {
 			int cnt = 1;
 			log.info("开始写入磁盘....uuid = {}", uuid);
 			for (String s : res) {

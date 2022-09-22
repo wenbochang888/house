@@ -6,10 +6,6 @@ import com.arronlong.httpclientutil.common.HttpHeader;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.Header;
 
-/**
- * @Auther: Chang
- * @Date: 2018/10/3
- */
 @Slf4j
 public class HttpMethod {
 
