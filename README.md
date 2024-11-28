@@ -7,7 +7,7 @@
 - #### **<a href = "https://www.zhihu.com/question/284939230/answer/483437087">知乎回答被删了, 谁提供下快照，可以issue里面提供下，谢谢</a>**
 
 
-### 微信小程序在线阅读：博博的小玩意
+### 微信小程序在线阅读：程序员博博
 ![qr](https://github.com/wenbochang888/house/assets/26178822/b2f14d91-1320-447c-999c-b78a7a18ad24)
 
  
